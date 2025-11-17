@@ -25,10 +25,10 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
-          ? "bg-white/95 backdrop-blur-md shadow-lg"
-          : "bg-transparent"
-          }`}
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300
+    ${isMobileMenuOpen ? "bg-white shadow-lg" : ""}
+    ${isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"}
+  `}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
@@ -39,10 +39,10 @@ const Navbar = () => {
                   <span className="text-white font-bold text-xl">GA</span>
                 </div>
                 <div className="hidden sm:block">
-                  <h1 className="text-xl font-bold text-gray-900">
+                  <h1 className={`text-xl font-bold ${isScrolled ? "text-gray-800" : "text-white"}`}>
                     Gula Aren Sriwulan
                   </h1>
-                  <p className="text-xs text-gray-600">BEM FT Undip</p>
+                  <p className={`text-xs text-gray-600 ${isScrolled ? "text-gray-800" : "text-white"}`}>BEM FT Undip</p>
                 </div>
               </Link>
             </div>
@@ -53,7 +53,7 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="px-4 py-2 rounded-lg text-gray-700 hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 font-medium"
+                  className={`px-4 py-2 rounded-lg hover:text-amber-700 hover:bg-amber-50 transition-all duration-200 font-medium ${isScrolled ? "text-gray-700" : "text-white"}`}
                 >
                   {link.name}
                 </a>
@@ -73,9 +73,9 @@ const Navbar = () => {
               className="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors"
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
+                <X className={`w-6 h-6`} />
               ) : (
-                <Menu className="w-6 h-6" />
+                <Menu className={`w-6 h-6 ${isScrolled ? "text-gray-800" : "text-white"}`} />
               )}
             </button>
           </div>
@@ -109,7 +109,7 @@ const Navbar = () => {
       </nav>
 
       {/* Spacer untuk konten di bawah navbar */}
-      <div className="h-20"></div>
+      {/* <div className="h-20"></div> */}
     </>
   );
 };
