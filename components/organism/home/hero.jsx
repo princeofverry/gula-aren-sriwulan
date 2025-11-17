@@ -5,7 +5,7 @@ const HeroHome = () => {
     return (
         <div className="relative w-full h-screen overflow-hidden pad-x">
             <video
-                src="https://firebasestorage.googleapis.com/v0/b/ardutofirebase.appspot.com/o/DJI_0670.MP4?alt=media&token=5d1b9bd0-cad4-47d5-bd62-4a8213f2dccf"
+                src="/assets/DJI_0670_2.mp4"
                 autoPlay
                 muted
                 loop
