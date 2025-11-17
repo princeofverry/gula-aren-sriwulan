@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroEdukasi from './hero'
+import HeroEdukasi from './HeroEdukasi'
 
 const EdukasiWrapper = () => {
     return (
