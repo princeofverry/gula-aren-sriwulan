@@ -1,7 +1,9 @@
+import EdukasiWrapper from "@/components/organism/edukasi/EdukasiWrapper";
+
 export default function Edukasi() {
   return (
     <>
-      <h1>Edukasi</h1>
+      <EdukasiWrapper />
     </>
   );
 }
