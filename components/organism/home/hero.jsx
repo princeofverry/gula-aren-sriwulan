@@ -3,7 +3,7 @@ import React from 'react';
 
 const HeroHome = () => {
     return (
-        <div className="relative w-full h-screen overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden pad-x">
             <video
                 src="https://firebasestorage.googleapis.com/v0/b/ardutofirebase.appspot.com/o/DJI_0670.MP4?alt=media&token=5d1b9bd0-cad4-47d5-bd62-4a8213f2dccf"
                 autoPlay
@@ -17,7 +17,7 @@ const HeroHome = () => {
             <div className="absolute inset-0 bg-black/20"></div>
 
             {/* Content di atas video */}
-            <div className="relative z-10 md:left-16 md:top-64 flex flex-col md:items-start items-center justify-center h-full space-y-4">
+            <div className="relative z-10 md:top-64 flex flex-col md:items-start items-center justify-center h-full space-y-4">
                 <h1 className="text-white text-xl md:text-6xl font-bold">
                     Gula Aren Organik & Wisata Edukasi
                 </h1>
