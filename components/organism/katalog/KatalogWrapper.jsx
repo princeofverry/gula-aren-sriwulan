@@ -6,7 +6,7 @@ import Produk from './Produk'
 const KatalogWrapper = () => {
     return (
         <>
-            <section>
+            <section className='space-y-8'>
                 <HeroKatalog />
                 <Quotes />
                 <Produk />
