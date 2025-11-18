@@ -18,7 +18,7 @@ const HeroEdukasi = () => {
 
             {/* Content di atas video */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full">
-                <h1 className="text-white text-xl md:text-6xl font-bold">
+                <h1 className="text-white font-playfair text-6xl md:text-8xl font-bold italic">
                     Gula Aren
                 </h1>
             </div>
