@@ -4,7 +4,7 @@ import React from 'react'
 const jenis = [
     {
         "title": "Gula Padat (Gula Aren Cetak)",
-        "image": "/katalog/6.png",
+        "image": "/assets/6.png",
         "desc": "Gula aren yang dicetak dalam bentuk balok atau batok, biasa digunakan dalam masakan tradisional seperti kolak, rendang, atau saus."
     },
     {
