@@ -10,7 +10,7 @@ const Eduwisata = () => {
                     <Image src="/assets/corak-home.png" alt="" width={500} height={500} className="object-contain" />
                 </div>
                 <div className='flex flex-col-reverse md:flex-row items-center justify-between gap-4'>
-                    <p className='flex-1 text-md lg:text-2xl md:text-xl tracking-wider text-justify'>
+                    <p className='flex-1 text-xl tracking-wider text-justify'>
                         &quot;Hidupkanlah pengalaman yang tak terlupakan dengan menyelami kearifan para pengrajin lokal, menikmati keaslian cita rasa yang otentik, serta meresapi kehangatan tradisi yang lestari. Setiap kunjungan Anda adalah sebuah dedikasi untuk menumbuhkan dampak sosial dan ekonomi yang positif, memberdayakan para petani dan menyinari masa depan masyarakat desa.&quot;
                     </p>
                     <div className="flex-1 max-w-[400px] h-auto overflow-hidden">
