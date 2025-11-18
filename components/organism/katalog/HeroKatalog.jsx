@@ -17,8 +17,8 @@ const HeroKatalog = () => {
             <div className="absolute inset-0 bg-black/20"></div>
 
             {/* Content di atas video */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full">
-                <h1 className="text-white text-xl md:text-6xl font-bold">
+            <div className="relative z-10 flex flex-col items-center justify-center h-full italic">
+                <h1 className="text-white text-6xl font-bold font-playfair">
                     Katalog
                 </h1>
             </div>
