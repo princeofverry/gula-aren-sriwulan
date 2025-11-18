@@ -2,6 +2,7 @@ import React from 'react'
 import HeroEdukasi from './HeroEdukasi'
 import ApaItuGula from './ApaItuGula'
 import PembuatanGulaAren from './PembuatanGulaAren'
+import ManfaatGulaAren from './ManfaatGulaAren'
 
 const EdukasiWrapper = () => {
     return (
@@ -10,6 +11,7 @@ const EdukasiWrapper = () => {
                 <HeroEdukasi />
                 <ApaItuGula />
                 <PembuatanGulaAren />
+                <ManfaatGulaAren />
             </section>
         </>
     )
