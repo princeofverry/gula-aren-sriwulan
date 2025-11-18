@@ -36,7 +36,7 @@ const PembuatanGulaAren = () => {
 
     return (
         <div className='bg-white'>
-            <div className='pad-x py-12 md:py-20 max-w-6xl mx-auto'>
+            <div className='pad-x py-12 md:py-20 max-w-7xl mx-auto'>
                 {/* Header */}
                 <div className='mb-16 md:mb-24'>
                     <h1 className='font-playfair text-3xl md:text-5xl lg:text-6xl font-bold text-gray-900 text-center'>

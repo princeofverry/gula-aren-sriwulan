@@ -3,6 +3,7 @@ import HeroEdukasi from './HeroEdukasi'
 import ApaItuGula from './ApaItuGula'
 import PembuatanGulaAren from './PembuatanGulaAren'
 import ManfaatGulaAren from './ManfaatGulaAren'
+import JenisGula from './JenisGula'
 
 const EdukasiWrapper = () => {
     return (
@@ -12,6 +13,7 @@ const EdukasiWrapper = () => {
                 <ApaItuGula />
                 <PembuatanGulaAren />
                 <ManfaatGulaAren />
+                <JenisGula />
             </section>
         </>
     )
