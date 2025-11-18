@@ -25,7 +25,7 @@ const PembuatanGulaAren = () => {
         {
             subtitle: "Gula Semut (Gula Kristal)",
             description: "Siram yang masih panas dituang langsung ke dalam cetakan batok kelapa atau bambu, lalu dibiarkan memadat secara alami.",
-            image: "/assets/5.png",
+            image: "/katalog/5.png",
         },
         {
             subtitle: "Gula Cair (Sirup)",

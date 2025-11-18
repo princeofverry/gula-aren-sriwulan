@@ -33,7 +33,7 @@ const ManfaatGulaAren = () => {
             <div>
                 <div className='flex flex-col md:flex-row items-center justify-between'>
                     <Image src="/assets/components.png" alt='' width={500} height={500} className='hidden md:block' />
-                    <h1 className='text-3xl md:text-6xl text-amber-900 font-playfair'>MANFAAT GULA AREN</h1>
+                    <h1 className='text-3xl md:text-5xl text-amber-900 font-playfair'>MANFAAT GULA AREN</h1>
                     <Image src="/assets/components.png" alt='' width={500} height={500} className='hidden md:block' />
                 </div>
                 <div className='grid grid-cols-1 md:grid-cols-3 pad-x gap-4 place-items-center my-10'>

@@ -4,7 +4,7 @@ import React from 'react'
 const jenis = [
     {
         "title": "Gula Padat (Gula Aren Cetak)",
-        "image": "/assets/6.png",
+        "image": "/katalog/6.png",
         "desc": "Gula aren yang dicetak dalam bentuk balok atau batok, biasa digunakan dalam masakan tradisional seperti kolak, rendang, atau saus."
     },
     {
@@ -31,7 +31,7 @@ const JenisGula = () => {
                         height={500}
                         className="hidden md:block scale-x-[-1]"
                     />
-                    <h1 className='text-3xl md:text-5xl text-amber-900 font-playfair'>MANFAAT GULA AREN</h1>
+                    <h1 className='text-3xl md:text-5xl text-amber-900 font-playfair'>Jenis-Jenis Gula Aren</h1>
                     <Image src="/assets/corak-home.png" alt='' width={500} height={500} className='hidden md:block' />
                 </div>
                 <div className="pad-x grid grid-cols-1 md:grid-cols-3 gap-8">
