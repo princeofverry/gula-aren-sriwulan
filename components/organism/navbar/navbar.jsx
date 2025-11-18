@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -35,9 +36,8 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex shrink-0">
               <Link href="/" className="flex items-center space-x-2">
-                <div className="w-10 h-10 bg-linear-to-br from-amber-600 to-amber-800 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-xl">GA</span>
-                </div>
+                <Image src={"/logo/arenankalikesek.png"} alt="" width={80} height={80} />
+                <Image src={"/logo/bemft.png"} alt="" width={60} height={60} />
                 <div className="hidden sm:block">
                   <h1 className={`text-xl font-bold ${isScrolled ? "text-gray-800" : "text-white"}`}>
                     Gula Aren Sriwulan
