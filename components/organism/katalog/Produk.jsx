@@ -22,21 +22,19 @@ const listProduk = [
 const Produk = () => {
     return (
         <div className='py-16 px-4 max-w-7xl mx-auto'>
-            {/* Header Section */}
+
             <div className='flex items-center justify-center gap-8 mb-16'>
                 <div className='hidden md:block h-px bg-amber-200 flex-1 max-w-xs'></div>
                 <h1 className='text-4xl md:text-6xl text-amber-900 font-playfair font-bold'>Produk Kami</h1>
                 <div className='hidden md:block h-px bg-amber-200 flex-1 max-w-xs'></div>
             </div>
 
-            {/* Product Grid */}
             <div className='grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12'>
                 {listProduk.map((item, index) => (
                     <div
                         key={index}
                         className='group flex flex-col items-center text-center transition-transform hover:scale-105 duration-300'
                     >
-                        {/* Image Container */}
                         <div className='relative w-full aspect-square mb-6 overflow-hidden rounded-2xl bg-amber-50 shadow-lg'>
                             <div className='absolute inset-0 bg-linear-to-br from-amber-100/50 to-transparent'></div>
                             <Image
@@ -47,7 +45,6 @@ const Produk = () => {
                             />
                         </div>
 
-                        {/* Product Info */}
                         <div className='space-y-3'>
                             <h2 className='text-2xl md:text-3xl text-amber-900 font-playfair font-semibold'>
                                 {item.title}
@@ -55,15 +52,22 @@ const Produk = () => {
                             <p className='text-xl text-amber-700 font-medium'>
                                 {item.price}
                             </p>
-                            <button className='mt-4 px-8 py-3 bg-amber-800 text-white rounded-full hover:bg-amber-900 transition-colors duration-300 font-medium shadow-md hover:shadow-xl'>
+
+                            {/* Tombol WhatsApp */}
+                            <a
+                                href={`https://wa.me/6285741171957?text=Halo%20saya%20ingin%20memesan%20${encodeURIComponent(item.title)}`}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='mt-4 inline-block px-8 py-3 bg-amber-800 text-white rounded-full hover:bg-amber-900 transition-colors duration-300 font-medium shadow-md hover:shadow-xl'
+                            >
                                 Pesan Sekarang
-                            </button>
+                            </a>
+
                         </div>
                     </div>
                 ))}
             </div>
 
-            {/* Bottom Decoration */}
             <div className='mt-16 flex justify-center'>
                 <div className='w-24 h-1 bg-linear-to-r from-transparent via-amber-400 to-transparent'></div>
             </div>
