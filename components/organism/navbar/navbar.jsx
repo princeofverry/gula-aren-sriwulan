@@ -36,8 +36,7 @@ const Navbar = () => {
             {/* Logo */}
             <div className="flex shrink-0">
               <Link href="/" className="flex items-center space-x-2">
-                <Image src={"/logo/arenankalikesek.png"} alt="" width={80} height={80} />
-                <Image src={"/logo/bemft.png"} alt="" width={60} height={60} />
+                <Image src={"/logo/sticker_baru.png"} alt="" width={250} height={60} />
                 <div className="hidden sm:block">
                   <h1 className={`text-xl font-bold ${isScrolled ? "text-gray-800" : "text-white"}`}>
                     Gula Aren Sriwulan

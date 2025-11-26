@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import { ChevronDown } from 'lucide-react';
+import Link from 'next/link';
 
 // Generate particles sekali di luar component
 const PARTICLES = [...Array(20)].map(() => ({
@@ -72,7 +73,9 @@ const HeroHome = () => {
                 <div className="flex flex-col sm:flex-row gap-4 mb-12 animate-fade-in-up-500">
                     <button className="group px-8 py-4 bg-linear-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-semibold rounded-full shadow-lg hover:shadow-amber-500/50 transition-all duration-300 transform hover:scale-105">
                         <span className="flex items-center justify-center gap-2">
-                            Katalog
+                            <Link href={"/katalog"}>
+                                Katalog
+                            </Link>
                             <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                             </svg>
@@ -80,7 +83,9 @@ const HeroHome = () => {
                     </button>
 
                     <button className="px-8 py-4 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white font-semibold rounded-full border-2 border-white/30 hover:border-white/50 transition-all duration-300 transform hover:scale-105">
-                        Edukasi
+                        <Link href="/edukasi">
+                            Edukasi
+                        </Link>
                     </button>
                 </div>
             </div>
